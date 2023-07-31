@@ -1,0 +1,69 @@
+body {
+  background-color: #121212;
+  font-family: "Fjalla One", sans-serif;
+  margin: 0;
+}
+
+h1 {
+  letter-spacing: 0.125ch;
+
+  position: relative;
+  text-align: center;
+  padding: 40px 0;
+
+  font-size: calc(6em + 5vw);
+  white-space: nowrap;
+
+  background: linear-gradient(92deg, #95d7e3, #eb76ff);
+  background: -webkit-linear-gradient(92deg, #95d7e3, #eb76ff);
+  background-size: 600vw 600vw;
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textAnimate 5s linear infinite alternate;
+}
+
+@keyframes textAnimate {
+  from {
+    filter: hue-rotate(0deg);
+    background-position-x: 0%;
+  }
+  to {
+    filter: hue-rotate(360deg);
+    background-position-x: 600vw;
+  }
+}
+
+div.text {
+  position: absolute;
+  width: 100%;
+  top: 100vh;
+  overflow: hidden;
+  margin-bottom: 25vh;
+}
+
+h2 {
+  color: #fff;
+  position: relative;
+  text-align: center;
+}
+
+div.links {
+  text-align: center;
+  font-size: 2.5em;
+  letter-spacing: 1em;
+  color: #fff;
+}
+
+i,
+a {
+  display: inline-block;
+  width: 50px;
+  text-decoration: none;
+  color: inherit;
+}
+
+p {
+    text-align: center;
+    color: #fff;
+}
