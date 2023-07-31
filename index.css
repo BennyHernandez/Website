@@ -42,6 +42,7 @@ div.text {
   top: 100vh;
   overflow: hidden;
   margin-bottom: 25vh;
+  font-family: sans-serif;
 }
 
 h2 {
