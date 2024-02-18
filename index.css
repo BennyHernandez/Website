@@ -39,9 +39,8 @@ h1 {
 div.text {
   position: absolute;
   width: 100%;
-  top: 100vh;
+  bottom: 0;
   overflow: hidden;
-  margin-bottom: 25vh;
   font-family: sans-serif;
 }
 
@@ -67,6 +66,6 @@ a {
 }
 
 p {
-    text-align: center;
-    color: #fff;
+  text-align: center;
+  color: #fff;
 }
