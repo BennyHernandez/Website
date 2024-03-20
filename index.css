@@ -25,6 +25,12 @@ h1 {
   animation: textAnimate 5s linear infinite alternate;
 }
 
+h2 {
+  position: fixed;
+  width: 100%;
+  text-align: center;
+  }
+
 @keyframes textAnimate {
   from {
     filter: hue-rotate(0deg);
