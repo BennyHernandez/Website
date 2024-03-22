@@ -2,16 +2,18 @@ body {
   background-color: #121212;
   font-family: "Fjalla One", sans-serif;
   margin: 0;
+  color: #fff;
 }
 
 /* https://codepen.io/billcastillo/pen/RVKxax */
 h1 {
   letter-spacing: 0.125ch;
 
-  position: fixed;
+  position: relative;
   width: 100%;
   text-align: center;
-  padding: 40px 0;
+  padding-top: 40px;
+  margin-bottom: 0;
 
   font-size: calc(6em + 5vw);
   white-space: nowrap;
@@ -26,10 +28,22 @@ h1 {
 }
 
 h2 {
-  position: fixed;
+  position: relative;
   width: 100%;
   text-align: center;
-  }
+  margin: 0;
+  font-size: 2.5em;
+}
+
+h3 {
+  position: relative;
+  text-align: center;
+  width: 100%;
+}
+
+h3 a {
+  width: 100%;
+}
 
 @keyframes textAnimate {
   from {
@@ -48,12 +62,6 @@ div.text {
   bottom: 0;
   overflow: hidden;
   font-family: sans-serif;
-}
-
-h2 {
-  color: #fff;
-  position: relative;
-  text-align: center;
 }
 
 div.links {
