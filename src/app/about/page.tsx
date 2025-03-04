@@ -4,42 +4,43 @@ import Image from "next/image";
 
 export default function About() {
   return (
-    <div className="flex flex-col min-h-screen">
+    <div className="flex flex-col min-h-screen overflow-clip">
       <Header />
       <main className="flex-1">
-        <div className="flex flex-col m-10 items-center gap-20">
+        <div className="flex flex-col my-10 md:m-10 items-center gap-5 md:gap-10">
           <h1 className="text-center font-title text-6xl uppercase">
             About Me
           </h1>
-          <div className="flex flex-row gap-10">
-            <div className="relative w-1/2 h-96">
+          <div className="flex flex-col md:flex-row px-5 md:px-30 gap-10 items-center">
+            <div className="relative w-full max-w-[28rem] h-96 md:basis-1/2">
               <Image
                 src="/Benny.jpg"
                 fill
                 alt="Benny Hernandez at USITT24"
-                className="object-contain"
+                className="object-cover"
               />
             </div>
-            <div className="flex flex-col gap-5 text-2xl">
+            <div className="flex flex-col gap-5 text-2xl basis-full">
               <p>
-                I am a multidisciplinary technician specializing in lighting
-                design, theatrical automation, and show networking. I will be
-                graduating from Sierra College in May 2025 with a degree in
-                Mechatronics and Theatre. I aim to combine my passions for
-                engineering and the arts to create innovative, technology-driven
-                theatrical solutions. In Fall 2025, I will continue my studies
-                in technical theater at CSU Long Beach.
+                <b>Hi! Im Benny Hernandez.</b> I am a theater student from California
+                specializing in lighting design. I also have an interest in
+                stage automation, show networking, and mechatronics<sup>1</sup>.
+                I have worked on lighting design for various productions
+                including shows with Sierra College, Miss Sacramento County,
+                Rocklin Community Theater, and more. I am actively doing
+                stagehand work with IATSE Local 50 and employed as a theater
+                technician at Sierra College and Roseville High School.
               </p>
               <p>
-                I have done lighting design for various productions, working
-                with Sierra College, Rocklin Community Theater, Miss Sacramento
-                County, Roseville High School, and more.
+                As of May 2025 I will receive an AA from Sierra College in
+                theater and mechatronics. I have plans to transfer to CSU Long
+                Beach in Fall 2025 to continue my studies in theater.
               </p>
               <p>
-                Beyond the stage, I enjoy developing electronics projects,
-                coding, and using CAD to create new designs. I especially love
-                merging technology with theater, constantly exploring new ways
-                to integrate automation and control systems into productions.
+                Beyond the stage, I enjoy working on electronics and coding
+                projects as well as creating using CAD programs. I am very
+                passionate about merging theater with technology and a lot of my
+                side projects include exploring these possibilities.
               </p>
               <p>
                 For more, find me on{" "}
@@ -47,14 +48,18 @@ export default function About() {
                   href="https://www.instagram.com/bennyy.hernandez/"
                   className="underline"
                 >
-                  Instagram
+                  Instagram @Bennyy.Hernandez
                 </a>
+              </p>
+              <p className="text-base">
+                <sup>1</sup>Mechatronics: The study of electronics, mechanics,
+                and computer/PLC programming for automated systems
               </p>
             </div>
           </div>
           <h1 className="text-center font-title text-6xl uppercase">Contact</h1>
           <div className="flex flex-col text-center text-2xl">
-            <p>Email is the best way to reach me</p>
+            <p>Email is the best way to reach me. Informal messages are always welcome on my Instagram.</p>
             <a href="mailto:benny@bennyh.io" className="underline">
               benny@bennyh.io
             </a>

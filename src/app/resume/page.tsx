@@ -3,14 +3,14 @@ import Footer from "../components/Footer";
 
 export default function Resume() {
   return (
-    <div className="flex flex-col min-h-screen">
+    <div className="flex flex-col min-h-screen overflow-clip">
       <Header />
       <main className="flex-1">
-        <div className="flex flex-col m-10 items-center gap-20">
+        <div className="flex flex-col my-10 items-center gap-20">
           <h1 className="text-center font-title text-6xl uppercase">Resume</h1>
-          <object data="/Resume.pdf" className="w-2/3 h-[85vh]">
+          <object data="/Resume.pdf" className="w-11/12 h-[55vh] md:w-2/3 md:h-[85vh]">
             <p>
-              Sorry, your browser doesn't support PDFs. Please download the PDF
+              Sorry, your browser doesn&apos;t support PDFs. Please download the PDF
               to view it: <a href="/Resume.pdf">Download</a>
             </p>
           </object>

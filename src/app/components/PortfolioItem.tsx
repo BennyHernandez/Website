@@ -22,6 +22,7 @@ export default function PortfolioItem({
   const [modalVisible, setModalVisible] = useState(false);
 
   const ImageCount = Children.count(children);
+  if (ImageCount <= 1) children = [children];
 
   console.log(ImageCount);
 
@@ -35,7 +36,6 @@ export default function PortfolioItem({
     else setIndex(index - 1);
   };
 
-  
   let media = cloneElement(children![index as keyof React.ReactNode], {
     onClick: (e) => {
       e.stopPropagation(); // Prevents closing modal when clicking on image itself. Due to the way object-contain works this also means that some space on either side of the picture is also not clickable.
@@ -43,41 +43,46 @@ export default function PortfolioItem({
   });
 
   return (
-    <div className="bg-black bg-opacity-20 flex flex-row p-6 my-5 gap-2 rounded-2xl">
-      <div className="relative aspect-video h-full min-h-52 [&>*]:rounded-xl [&>*]:object-cover">
+    <div className="bg-black/20 flex flex-col md:flex-row p-6 my-5 gap-5 md:gap-2 rounded-2xl">
+      <div className="relative aspect-video h-full min-h-52 *:rounded-xl *:object-cover">
         {media}
-        <div className="flex flex-row absolute bottom-1 justify-center items-center gap-8 w-full">
-          <button className="relative" onClick={prevImage}>
-            <CircleChevronLeft size={40} />
-          </button>
-          <span className="font-bold text-lg">
-            {index + 1}/{ImageCount}
-          </span>
-          <button className="relative" onClick={nextImage}>
-            <CircleChevronRight size={40} />
-          </button>
-          <button
-            className="absolute right-2"
-            onClick={() => setModalVisible(true)}
-          >
-            <MoveDiagonal size={30}></MoveDiagonal>
-          </button>
-        </div>
+        {ImageCount > 1 && (
+          <div className="flex flex-row absolute bottom-1 justify-center items-center gap-8 w-full">
+            <button className="relative" onClick={prevImage}>
+              <CircleChevronLeft size={40} />
+            </button>
+            <span className="font-bold text-lg">
+              {index + 1}/{ImageCount}
+            </span>
+            <button className="relative" onClick={nextImage}>
+              <CircleChevronRight size={40} />
+            </button>
+          </div>
+        )}
+        <button
+          className="absolute ml-auto bottom-2 right-2"
+          onClick={() => setModalVisible(true)}
+        >
+          <MoveDiagonal size={30}></MoveDiagonal>
+        </button>
         {/* Image Modal */}
         {modalVisible && (
           <div
-            className="fixed inset-0 w-screen h-screen bg-black bg-opacity-30 z-50 content-center"
+            className="fixed inset-0 w-screen h-screen bg-black/75 z-50 content-center"
             onClick={() => setModalVisible(false)}
           >
-            <div className="relative m-auto h-2/3 w-4/5 [&>*]:object-contain">
+            <div className="relative m-auto h-2/3 w-4/5 *:object-contain">
               {media}
+
               <div
                 className="flex flex-row absolute bottom-5 justify-center items-end gap-8 w-full"
                 onClick={(e) => e.stopPropagation()}
               >
-                <button className="relative" onClick={prevImage}>
-                  <CircleChevronLeft size={40} />
-                </button>
+                {ImageCount > 1 && (
+                  <button className="relative" onClick={prevImage}>
+                    <CircleChevronLeft size={40} />
+                  </button>
+                )}
                 <div className="flex flex-col gap-2">
                   <span className="font-bold text-xl text-center">
                     {index + 1}/{ImageCount}
@@ -89,12 +94,16 @@ export default function PortfolioItem({
                     <CircleX size={40} />
                   </button>
                 </div>
-                <button className="relative" onClick={nextImage}>
-                  <CircleChevronRight size={40} />
-                </button>
+                {ImageCount > 1 && (
+                  <button className="relative" onClick={nextImage}>
+                    <CircleChevronRight size={40} />
+                  </button>
+                )}
               </div>
             </div>
-            <p className="text-center font-bold text-2xl mt-2 w-4/5 m-auto">{(media as ReactElement<{ alt?: string }>).props.alt}</p>
+            <p className="text-center font-bold text-2xl mt-2 w-4/5 m-auto">
+              {(media as ReactElement<{ alt?: string }>).props.alt}
+            </p>
           </div>
         )}
       </div>

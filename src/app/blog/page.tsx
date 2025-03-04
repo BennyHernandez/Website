@@ -3,7 +3,7 @@ import Footer from "../components/Footer";
 
 export default function BlogHome() {
   return (
-    <div className="flex flex-col min-h-screen">
+    <div className="flex flex-col min-h-screen overflow-clip">
       <Header />
       <main className="flex-1">
         <div className="flex flex-col m-10 items-center gap-20">
