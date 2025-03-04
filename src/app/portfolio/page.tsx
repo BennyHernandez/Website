@@ -154,6 +154,25 @@ export default function Portfolio() {
                 <Image alt={"Torch practical"} src={"/R&JSierra2.jpg"} fill />
               </PortfolioItem>
             </PortfolioCategory>
+                        <PortfolioCategory title="Other">
+              <PortfolioItem
+                title={
+                  "The Pops Chorale @ Sierra College - Spot Operator"
+                }
+                subtitle={
+                  "(2024)"
+                }
+                text={
+                  "Created personal spot sheet, listen to calls from lighting operator & stage manager, lit dancers & musicians"
+                }
+              >
+                <Image
+                  alt={"Operating spotlight from cove"}
+                  src={"/SpotOp.jpg"}
+                  fill
+                />
+              </PortfolioItem>
+            </PortfolioCategory>
           </div>
         </div>
       </main>
