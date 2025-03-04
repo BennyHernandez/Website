@@ -28,7 +28,7 @@ export default function About() {
                 I have worked on lighting design for various productions
                 including shows with Sierra College, Miss Sacramento County,
                 Rocklin Community Theater, and more. I am actively doing
-                stagehand work with IATSE Local 50 and employed as a theater
+                stagehand work with IATSE Local 50 and I am employed as a theater
                 technician at Sierra College and Roseville High School.
               </p>
               <p>

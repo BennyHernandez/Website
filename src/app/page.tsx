@@ -42,7 +42,7 @@ export default function Home() {
         <div className="flex flex-col md:flex-row flex-wrap bg-black/20 md:max-w-5/6 w-fit h-fit m-auto p-10 md:rounded-2xl gap-10 justify-center">
         <FeaturedImage title={"Lighting Design"} src={"/Focusing.jpg"} />
         <FeaturedImage title={"Show Networking"} src={"/ShowNetworking.jpg"} />
-        <FeaturedImage title={"Mechatronics"} src={"/LightingDesign.jpg"} />
+        <FeaturedImage title={"Mechatronics"} src={"/Soldering.jpg"} />
         </div>
       </main>
       <Footer />
