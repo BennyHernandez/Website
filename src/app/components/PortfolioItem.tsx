@@ -44,7 +44,7 @@ export default function PortfolioItem({
 
   return (
     <div className="bg-black/20 flex flex-col md:flex-row p-6 my-5 gap-5 md:gap-2 rounded-2xl">
-      <div className="relative aspect-video h-full min-h-52 w-full *:rounded-xl *:object-cover">
+      <div className="relative aspect-video h-full min-h-52 w-full md:w-auto *:rounded-xl *:object-cover">
         {media}
         {ImageCount > 1 && (
           <div className="flex flex-row absolute bottom-1 justify-center items-center gap-8 w-full">
