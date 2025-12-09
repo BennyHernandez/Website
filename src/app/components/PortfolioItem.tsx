@@ -7,6 +7,10 @@ import {
 } from "lucide-react";
 import { useState, Children, cloneElement, ReactElement } from "react";
 
+interface MediaProps {
+  onClick?: (e: MouseEvent) => void;
+}
+
 export default function PortfolioItem({
   children,
   title,
@@ -21,10 +25,9 @@ export default function PortfolioItem({
   const [index, setIndex] = useState(0);
   const [modalVisible, setModalVisible] = useState(false);
 
-  const ImageCount = Children.count(children);
-  if (ImageCount <= 1) children = [children];
+  const childArray = Children.toArray(children) as ReactElement<MediaProps>[];
 
-  console.log(ImageCount);
+  const ImageCount = childArray.length;
 
   const nextImage = () => {
     if (index + 1 > ImageCount - 1) setIndex(0);
@@ -36,7 +39,9 @@ export default function PortfolioItem({
     else setIndex(index - 1);
   };
 
-  let media = cloneElement(children![index as keyof React.ReactNode], {
+  const baseMedia:ReactElement<MediaProps> = childArray[index];
+
+  let media = cloneElement<MediaProps>(baseMedia, {
     onClick: (e) => {
       e.stopPropagation(); // Prevents closing modal when clicking on image itself. Due to the way object-contain works this also means that some space on either side of the picture is also not clickable.
     },
