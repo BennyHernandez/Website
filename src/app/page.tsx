@@ -399,13 +399,13 @@ export default function Home() {
 
         <div
           id="portfolio"
-          className="flex flex-col gap-3 w-full font-title text-center justify-center px-50 py-10 md:py-16 border-black border-t-[1.25rem]"
+          className="flex flex-col gap-3 w-full font-title text-center justify-center md:px-50 px-4 py-10 md:py-16 border-black border-t-[1.25rem]"
           ref={(element) => {
             portfolioRef.current["portfolio"] = element;
           }}
         >
-          <h1 className="text-7xl">Hi! I&apos;m Benny Hernandez</h1>
-          <p className="text-3xl">
+          <h1 className="md:text-7xl text-4xl">Hi! I&apos;m Benny Hernandez</h1>
+          <p className="md:text-3xl text-xl">
             I am a lighting technician and designer based in Long Beach, California. <br />
             Come take a look at what I am working on!
           </p>
@@ -431,7 +431,7 @@ export default function Home() {
                   setSelectedItemSrc(null);
                 }}
               >
-                <CircleX size={40} />
+                <CircleX size={40} className="md:scale-100 scale-75"/>
               </button>
               <div
                 className={`z-10 aspect-video w-full rounded-lg overflow-hidden cursor-pointer transform-gpu transition-[translate] duration-700 ease-in-out ${selectedItemSrc === item.src ? "absolute md:w-[calc((100%-2rem)/3)] md:shrink-0" : "relative"}`}
@@ -478,7 +478,7 @@ export default function Home() {
                   )}
 
                   {item.photos.length > 0 && (
-                    <div className="mt-4 grid grid-cols-3 gap-2">
+                    <div className="mt-4 grid md:grid-cols-3 grid-cols-2 gap-2">
                       {item.photos.map((photo, index) => (
                         <GalleryImage
                           key={`${item.src}-${photo.image}-${index}`}
@@ -494,7 +494,7 @@ export default function Home() {
           ))}
         </div>
 
-        <div className="flex flex-col gap-3 w-full font-title text-center justify-center px-50 py-10 md:py-16">
+        <div className="flex flex-col gap-3 w-full font-title text-center justify-center md:px-50 px-4 py-10 md:py-16">
           <p className="text-3xl">
             Check out my <Link href="/resume" className="underline">resume</Link> or <Link href="/about" className="underline">about me</Link> for more details on my work and projects!
           </p>

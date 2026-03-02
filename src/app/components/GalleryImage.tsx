@@ -37,17 +37,17 @@ export default function GalleryImage({src, caption}: GalleryImageProps) {
                     className="object-cover"
                 />
                 <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/50 to-black/0 px-3 py-2">
-                    <p className="font-sans text-md font-light text-center text-gray-100/75">{caption}</p>
+                    <p className="font-sans md:text-md text-xs font-light text-center text-gray-100/75">{caption}</p>
                   </div>
             </div>
 
             {isMounted && expandImage && createPortal(
                 <div
                     onClick={() => setExpandImage(false)}
-                    className="fixed inset-0 z-[9999] bg-black/85 p-[clamp(3rem,5rem,8rem)] cursor-zoom-out flex flex-col gap-5 items-center justify-center"
+                    className="fixed inset-0 z-[9999] bg-black/85 md:p-[clamp(3rem,5rem,8rem)] p-5 cursor-zoom-out flex flex-col gap-5 items-center justify-center"
                 >
                     <div
-                        className="relative h-full w-full"
+                        className="relative w-full aspect-video"
                         onClick={(event) => setExpandImage(false)}
                     >
                         <Image
@@ -57,7 +57,7 @@ export default function GalleryImage({src, caption}: GalleryImageProps) {
                             className="object-contain"
                         />
                     </div>
-                    {caption && <p className='font-sans'>{caption}</p>}
+                    {caption && <p className='font-sans text-xl md:text-3xl'>{caption}</p>}
                 </div>,
                 document.body
             )}
