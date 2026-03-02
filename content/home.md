@@ -39,9 +39,9 @@ portfolio:
       local crew in focusing, facilitated communications with other departments,
       and took notes for designer, stage manager, and choreographer.
     photo:
-      - image: /R&J.jpg
-        caption: ""
       - image: /R&J2.jpg
+        caption: ""
+      - image: /R&J.jpg
         caption: ""
   - title: Romeo & Juliet
     type: Lighting Design
