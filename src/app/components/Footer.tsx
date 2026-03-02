@@ -12,7 +12,7 @@ export default function Footer() {
             <a href="https://www.instagram.com/bennyy.hernandez/"><Instagram size={50} /></a>
             <a href="https://github.com/BennyHernandez"><Github size={50} /></a>
             <a href="https://www.linkedin.com/in/benny-h/"><Linkedin size={50} /></a>
-            <a href="mailto:bennyh.io"><Mail size={50} /></a>
+            <a href="mailto:benny@bennyh.io"><Mail size={50} /></a>
         </div>
         <p className="font-title text-2xl md:text-3xl text-center">Copyright Benny Hernandez {new Date().getFullYear()}</p>
       </div>

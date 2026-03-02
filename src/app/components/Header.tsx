@@ -6,19 +6,34 @@ import { useState } from "react";
 
 export default function Header() {
   const [dropdownVisible, setDropdownVisible] = useState(false);
+
+  const handlePortfolioClick = (event: React.MouseEvent<HTMLAnchorElement>) => {
+    setDropdownVisible(false);
+
+    if (window.location.pathname === "/") {
+      event.preventDefault();
+      if (window.location.hash !== "#portfolio") {
+        window.history.replaceState(null, "", "#portfolio");
+      }
+      window.dispatchEvent(new Event("portfolio-scroll"));
+    }
+  };
+
+  const handleNavClick = () => {
+    setDropdownVisible(false);
+  };
+
   return (
     <header className="h-[100px] w-full sticky top-0 items-center z-40">
-      <div className="bg-black flex flex-row size-full py-4 px-4 md:px-8">
+      <div className="bg-black flex flex-row size-full py-4 px-4 md:px-15">
         <Link className="w-40 h-full relative" href="/">
           <Image src={"/Logo.svg"} alt="Logo" fill />
         </Link>
         <div className="hidden md:flex flex-row justify-end gap-10 w-full self-end font-title text-3xl uppercase">
-          <Link href="/portfolio" className="">
-            Theatre Portfolio
-          </Link>
-          <Link href="/resume">Resume</Link>
-          <Link href="/blog">Blog</Link>
-          <Link href="/about">About</Link>
+          <Link href="/#portfolio" onClick={handlePortfolioClick}>Portfolio</Link>
+          <Link href="/resume" onClick={handleNavClick}>Resume</Link>
+          <Link href="/blog" onClick={handleNavClick}>Blog</Link>
+          <Link href="/about" onClick={handleNavClick}>About</Link>
         </div>
         <button
           className="md:hidden ml-auto"
@@ -33,12 +48,10 @@ export default function Header() {
         }
       `}
       >
-        <Link href="/portfolio" className="">
-          Theatre Portfolio
-        </Link>
-        <Link href="/resume">Resume</Link>
-        <Link href="/blog">Blog</Link>
-        <Link href="/about">About</Link>
+        <Link href="/#portfolio" onClick={handlePortfolioClick}>Portfolio</Link>
+        <Link href="/resume" onClick={handleNavClick}>Resume</Link>
+        <Link href="/blog" onClick={handleNavClick}>Blog</Link>
+        <Link href="/about" onClick={handleNavClick}>About</Link>
       </div>
     </header>
   );

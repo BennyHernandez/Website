@@ -1,0 +1,44 @@
+backend:
+  name: git-gateway
+  # name: test-repo
+  branch: Portfolio # Branch to update (optional; defaults to master)
+media_folder: public/img
+public_folder: img
+collections:
+  - name: "pages"
+    label: "Pages"
+    files:
+    - label: "Home"
+      name: "home"
+      file: "content/home.md"
+      editor:
+        preview: false
+      fields:
+        - label: 'Portfolio'
+          name: "portfolio"
+          widget: list
+          fields:
+            - { label: "Project", name: "title", widget: "string"}
+            - { label: "Type", name: "type", widget: "select", options: ["Lighting Design", "Lighting Programmer", "Software", "Mechatronics", "Other Design"]}
+            - { label: "Role", name: "role", widget: "string"}
+            - { label: "Date", name: "date", widget: "number", min: 2000, max: 2100, step: 1}
+            - { label: "Location", name: "location", widget: "string"}
+            - label: "Crew"
+              name: "crew"
+              widget: "list"
+              fields: 
+              - { label: "Name", name: "name", widget: "string"}
+              - { label: "Role", name: "role", widget: "string"}
+            - { label: "Description", name: "description", widget: "text"}
+            - label: "Photo"
+              name: "photo"
+              widget: "list"
+              fields:
+              - label: "Image" 
+                name: "image"
+                widget: "image"
+                allow_multiple: false
+              - label: "Caption"
+                name: "caption"
+                widget: "string"
+                required: false
