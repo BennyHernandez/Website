@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Roboto, Roboto_Mono, Fjalla_One } from "next/font/google";
+import { GoogleAnalytics } from "@next/third-parties/google";
 import "./globals.css";
 
 const roboto = Roboto({
@@ -36,6 +37,7 @@ export default function RootLayout({
         className={`${roboto.variable} ${robotoMono.variable} ${fjalla.variable} antialiased`}
       >
         {children}
+        <GoogleAnalytics gaId="G-TVGM745SLP"/>
       </body>
     </html>
   );
