@@ -23,7 +23,7 @@ const fjalla = Fjalla_One({
 export const metadata: Metadata = {
   title: "Benny Hernandez",
   description:
-    "Benny Hernandez is a theatre technician from Roseville, Califronia. He has a degree in Theater and Mechatronics from Sierra College in Rocklin, CA.",
+    "Benny Hernandez is a lighting designer, programmer and maker based in Long Beach, California. View his portfolio of work, read his blog, or get in touch to learn more about his projects and experience.",
 };
 
 export default function RootLayout({
