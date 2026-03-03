@@ -1,5 +1,25 @@
 ---
 portfolio:
+  - title: Carrie The Musical
+    type: Lighting Design
+    role: Assistant Lighting Designer
+    date: 2025
+    location: California Repertory Company
+    crew:
+      - name: Daniel Nakawatasae
+        role: Director
+      - name: Martha Carter
+        role: Lighting Designer
+      - name: Ryan Meissner
+        role: Programmer
+    description: "Worked with Martha to assemble paper work such as spot sheets, cue
+      sheets, preset list and more to make designing and programming the show
+      possible. Also helped design effects, specific scenes, and work to solve
+      technical problems. "
+    photo:
+      - image: img/carrie.jpg
+      - image: img/screenshot-2026-03-02-at-5.38.29 pm.png
+        caption: Spot sheets
   - title: Guys and Dolls
     type: Lighting Design
     role: Associate Lighting Designer
@@ -87,24 +107,4 @@ portfolio:
     photo:
       - image: /MissSac.jpg
         caption: ""
-  - title: Carrie The Musical
-    type: Lighting Design
-    role: Assistant Lighting Designer
-    date: 2025
-    location: California Repertory Company
-    crew:
-      - name: Daniel Nakawatasae
-        role: Director
-      - name: Martha Carter
-        role: Lighting Designer
-      - name: Ryan Meissner
-        role: Programmer
-    description: "Worked with Martha to assemble paper work such as spot sheets, cue
-      sheets, preset list and more to make designing and programming the show
-      possible. Also helped design effects, specific scenes, and work to solve
-      technical problems. "
-    photo:
-      - image: img/carrie.jpg
-      - image: img/screenshot-2026-03-02-at-5.38.29 pm.png
-        caption: Spot sheets
 ---
