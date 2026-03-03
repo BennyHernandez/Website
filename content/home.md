@@ -18,15 +18,16 @@ portfolio:
       - image: /GuysDolls2.jpg
         caption: ""
       - image: /GuysDolls.jpg
-        caption: Yay!
+        caption: ""
       - image: /HotBox.jpg
-        caption: ""
+        caption: Hot box lighting w/ 4 sets of individually controlled strands
       - image: /HotBox2.jpg
-        caption: ""
+        caption: Back of Hot Box wagon. Wiring for practical lighting.
       - image: /HotBox3.jpg
-        caption: ""
+        caption: Dimmer pack and wireless DMX used to control practical lighting on Hot
+          Box wagon
       - image: /Pillar.jpg
-        caption: ""
+        caption: Pillar up lighting using blackwrap to keep light off the ceiling
   - title: Romeo & Juliet
     type: Lighting Design
     role: Assistant Lighting Designer
@@ -40,7 +41,7 @@ portfolio:
       and took notes for designer, stage manager, and choreographer.
     photo:
       - image: /R&J2.jpg
-        caption: ""
+        caption: Programing at the SAFE Credit Union Performing Arts Center
       - image: /R&J.jpg
         caption: ""
   - title: Romeo & Juliet
