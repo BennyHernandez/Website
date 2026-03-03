@@ -74,6 +74,11 @@ export default function Home() {
     };
   }, []);
 
+  const resolveSrc = (s: string) => {
+    if (!s) return s;
+    return s.startsWith('/') || s.startsWith('http') ? s : `/${s}`;
+  };
+
   useEffect(() => {
     if (!selectedItemSrc) return;
 
@@ -437,7 +442,7 @@ export default function Home() {
                 className={`z-10 aspect-video w-full rounded-lg overflow-hidden cursor-pointer transform-gpu transition-[translate] duration-700 ease-in-out ${selectedItemSrc === item.src ? "absolute md:w-[calc((100%-2rem)/3)] md:shrink-0" : "relative"}`}
               >
                 <Image
-                  src={item.src}
+                  src={resolveSrc(item.src)}
                   alt={item.title}
                   fill
                   className="object-cover transition-transform duration-300 group-hover:scale-[1.02]"

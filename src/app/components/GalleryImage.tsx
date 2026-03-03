@@ -4,6 +4,10 @@ import { createPortal } from 'react-dom';
 import type { GalleryImageProps } from '../../types/portfolio';
 
 export default function GalleryImage({src, caption}: GalleryImageProps) {
+    const resolveSrc = (s: string) => {
+        if (!s) return s;
+        return s.startsWith('/') || s.startsWith('http') ? s : `/${s}`;
+    };
     const [expandImage, setExpandImage] = useState(false);
     const [isMounted, setIsMounted] = useState(false);
 
@@ -31,7 +35,7 @@ export default function GalleryImage({src, caption}: GalleryImageProps) {
                 className="relative aspect-video rounded-md cursor-zoom-in"
             >
                 <Image
-                    src={src}
+                    src={resolveSrc(src)}
                     alt={`${caption}`}
                     fill
                     className="object-cover"
@@ -51,7 +55,7 @@ export default function GalleryImage({src, caption}: GalleryImageProps) {
                         onClick={(event) => setExpandImage(false)}
                     >
                         <Image
-                            src={src}
+                            src={resolveSrc(src)}
                             alt={`${caption}`}
                             fill
                             className="object-contain"

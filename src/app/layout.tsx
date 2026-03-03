@@ -21,7 +21,7 @@ const fjalla = Fjalla_One({
 });
 
 export const metadata: Metadata = {
-  title: "Benny Hernandez",
+  title: "Benny Hernandez | Lighting Designer, Programmer and Maker",
   description:
     "Benny Hernandez is a lighting designer, programmer and maker based in Long Beach, California. View his portfolio of work, read his blog, or get in touch to learn more about his projects and experience.",
 };
