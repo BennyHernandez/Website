@@ -3,9 +3,9 @@ import Image from "next/image";
 
 export default function Footer() {
   return (
-    <footer className="bg-black grid md:grid-flow-col mb-auto h-[250px] md:h-[150px] py-5 px-10 items-center mt-16 justify-center md:justify-normal">
+    <footer className="bg-black grid md:grid-flow-col mb-0 h-[250px] md:h-[150px] py-5 px-10 items-center mt-auto justify-center md:justify-normal gap-5">
       <div className="relative h-20 w-full md:w-80 md:h-full">
-        <Image src={"/Logo.svg"} alt="Logo" className="object-contain" fill />
+        <Image src={"/img/Logo.svg"} alt="Logo" className="object-contain" fill />
       </div>
       <div className="flex flex-col gap-4 justify-center ml-auto">
         <div className="flex flex-row gap-4 justify-center">

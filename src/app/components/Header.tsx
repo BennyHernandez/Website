@@ -27,7 +27,7 @@ export default function Header() {
     <header className="h-[100px] w-full sticky top-0 items-center z-40">
       <div className="bg-black flex flex-row size-full py-4 px-4 md:px-15">
         <Link className="w-40 h-full relative" href="/">
-          <Image src={"/Logo.svg"} alt="Logo" fill />
+          <Image src={"/img/Logo.svg"} alt="Logo" fill />
         </Link>
         <div className="hidden md:flex flex-row justify-end gap-10 w-full self-end font-title text-3xl uppercase">
           <Link href="/#portfolio" onClick={handlePortfolioClick}>Portfolio</Link>

@@ -17,8 +17,8 @@ portfolio:
       possible. Also helped design effects, specific scenes, and work to solve
       technical problems. "
     photo:
-      - image: img/carrie.jpg
-      - image: img/screenshot-2026-03-02-at-5.38.29 pm.png
+      - image: uploaded-img/carrie.jpg
+      - image: uploaded-img/screenshot-2026-03-02-at-5.38.29 pm.png
         caption: Spot sheets
   - title: Guys and Dolls
     type: Lighting Design
@@ -35,18 +35,18 @@ portfolio:
       dimmer pack and wireless DMX. Managed spot operators, created spot sheet,
       and hung & focused lights.
     photo:
-      - image: /GuysDolls2.jpg
+      - image: img/GuysDolls2.jpg
         caption: ""
-      - image: /GuysDolls.jpg
+      - image: img/GuysDolls.jpg
         caption: ""
-      - image: /HotBox.jpg
+      - image: img/HotBox.jpg
         caption: Hot box lighting w/ 4 sets of individually controlled strands
-      - image: /HotBox2.jpg
+      - image: img/HotBox2.jpg
         caption: Back of Hot Box wagon. Wiring for practical lighting.
-      - image: /HotBox3.jpg
+      - image: img/HotBox3.jpg
         caption: Dimmer pack and wireless DMX used to control practical lighting on Hot
           Box wagon
-      - image: /Pillar.jpg
+      - image: img/Pillar.jpg
         caption: Pillar up lighting using blackwrap to keep light off the ceiling
   - title: Romeo & Juliet
     type: Lighting Design
@@ -60,9 +60,9 @@ portfolio:
       local crew in focusing, facilitated communications with other departments,
       and took notes for designer, stage manager, and choreographer.
     photo:
-      - image: /R&J2.jpg
+      - image: img/R&J2.jpg
         caption: Programing at the SAFE Credit Union Performing Arts Center
-      - image: /R&J.jpg
+      - image: img/R&J.jpg
         caption: ""
   - title: Romeo & Juliet
     type: Lighting Design
@@ -78,9 +78,9 @@ portfolio:
       production, completed patching & addressing work, created palettes,
       presets & magic sheets, wired and installed torch practicals.
     photo:
-      - image: /R&JSierra2.jpg
+      - image: img/R&JSierra2.jpg
         caption: ""
-      - image: /R&JSierra.jpg
+      - image: img/R&JSierra.jpg
         caption: ""
   - title: The Pops Chorale
     type: Lighting Design
@@ -92,9 +92,9 @@ portfolio:
       created EOS effects, and managed spot operators. Credits include Holiday
       Show '24, Big Band '24, American Pops '24, and Big Band '23.
     photo:
-      - image: /Pops.png
+      - image: img/Pops.png
         caption: ""
-      - image: /ConcertEOS.png
+      - image: img/ConcertEOS.png
         caption: ""
   - title: Miss Sacramento County
     type: Lighting Design
@@ -105,6 +105,6 @@ portfolio:
     description: Created lighting looks & effects synced with music, utilized venue
       equipment to program and run show (2023, 2024).
     photo:
-      - image: /MissSac.jpg
+      - image: img/MissSac.jpg
         caption: ""
 ---

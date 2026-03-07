@@ -51,7 +51,7 @@ export default function GalleryImage({src, caption}: GalleryImageProps) {
                     className="fixed inset-0 z-[9999] bg-black/85 md:p-[clamp(3rem,5rem,8rem)] p-5 cursor-zoom-out flex flex-col gap-5 items-center justify-center"
                 >
                     <div
-                        className="relative w-full aspect-video"
+                        className="relative w-full aspect-video max-h-[80vh]"
                         onClick={(event) => setExpandImage(false)}
                     >
                         <Image

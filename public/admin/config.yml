@@ -1,9 +1,10 @@
+local_backend: true
 backend:
-  name: git-gateway
-  # name: test-repo
+  # name: git-gateway
+  name: test-repo
   branch: Portfolio # Branch to update (optional; defaults to master)
-media_folder: public/img
-public_folder: img
+media_folder: public/uploaded-img
+public_folder: /uploaded-img
 collections:
   - name: "pages"
     label: "Pages"
@@ -42,3 +43,30 @@ collections:
                 name: "caption"
                 widget: "string"
                 required: false
+    - label: "Blog"
+      name: "posts"
+      file: "content/featured.md"
+      editor:
+        preview: false
+      fields:
+        - label: "Featured Posts"
+          name: "post"
+          widget: "relation"
+          multiple: true
+          min: 1
+          max: 2
+          collection: "blog"
+          search_fields: ["title"]
+          value_field: "{{slug}}"
+          display_fields: ["title", "date"]
+  - name: "blog"
+    label: "Blog"
+    folder: "content/posts"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Date", name: "date", widget: "datetime" }
+      - {label: "Thumbnail", name: "thumbnail", widget: "image", allow_multiple: false}
+      - { label: "Body", name: "body", widget: "markdown" }
+      - { label: "Hidden", name: "hidden", widget: "boolean", default: false }

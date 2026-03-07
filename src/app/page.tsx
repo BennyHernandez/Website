@@ -298,7 +298,7 @@ export default function Home() {
           <div className="relative">
             <Image
               alt="Gallery Picture of EOS concert lighting"
-              src="/LightDesign2.jpg"
+              src="/img/LightDesign2.jpg"
               fill
               className={`object-cover filter transition-all duration-2000 ease-in-out ${isHeroFiltered ? "blur-[3px] brightness-65" : ""
                 }`}

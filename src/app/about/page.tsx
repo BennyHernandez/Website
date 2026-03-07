@@ -14,7 +14,7 @@ export default function About() {
           <div className="flex flex-col md:flex-row px-5 md:px-30 gap-10 items-center">
             <div className="relative w-full max-w-[28rem] h-96 md:basis-1/2">
               <Image
-                src="/Benny.jpg"
+                src="/img/Benny.jpg"
                 fill
                 alt="Benny Hernandez at USITT24"
                 className="object-cover"
@@ -32,9 +32,10 @@ export default function About() {
                 technician at Sierra College and Roseville High School.
               </p>
               <p>
-                As of May 2025 I will receive an AA from Sierra College in
-                theater and mechatronics. I have plans to transfer to CSU Long
-                Beach in Fall 2025 to continue my studies in theater.
+                As of March 2026 I am currently attending CSU Long Beach
+                where I am continuing my studies in technical theater.
+                Prior to this, I attended Sierra College and received 
+                an AA degree in theater and mechatronics.
               </p>
               <p>
                 Beyond the stage, I enjoy working on electronics and coding
