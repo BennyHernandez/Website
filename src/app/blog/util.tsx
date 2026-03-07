@@ -10,6 +10,13 @@ if (!s) return s;
 return s.startsWith('/') || s.startsWith('http') ? s : `/${s}`;
 };
 
+export function getPostSlugs(): string[] {
+    return fs
+        .readdirSync(postsDirectory)
+        .filter((fileName) => /\.md?$/.test(fileName))
+        .map((fileName) => fileName.replace(/\.md?$/, ""));
+}
+
 export function getPostsThumbnails(): PostThumbnail[] {
     const fileNames = fs.readdirSync(postsDirectory);
 

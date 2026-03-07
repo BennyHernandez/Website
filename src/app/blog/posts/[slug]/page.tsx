@@ -3,7 +3,7 @@ import Markdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 import Footer from "@/app/components/Footer";
 import Header from "@/app/components/Header";
-import { getPostData } from "../../util";
+import { getPostData, getPostSlugs } from "../../util";
 import BlogImage from "@/app/components/BlogImage";
 import BlogPostThumbnail from "@/app/components/BlogPostThumbnail";
 
@@ -11,6 +11,10 @@ const resolveSrc = (s: string) => {
 if (!s) return s;
 return s.startsWith('/') || s.startsWith('http') ? s : `/${s}`;
 };
+
+export function generateStaticParams() {
+    return getPostSlugs().map((slug) => ({ slug }));
+}
 
 export default async function PostPage({params}: {params: Promise<{ slug: string }>}) {
     const { slug } = await params;
