@@ -11,7 +11,7 @@ portfolio:
       - name: Martha Carter
         role: Lighting Designer
       - name: Ryan Meissner
-        role: Programmer
+        role: Lighting Programmer
     description: "Worked with Martha to assemble paper work such as spot sheets, cue
       sheets, preset list and more to make designing and programming the show
       possible. Also helped design effects, specific scenes, and work to solve
