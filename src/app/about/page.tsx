@@ -26,7 +26,7 @@ export default function About() {
                 specializing in lighting design. I also have an interest in
                 stage automation, show networking, and mechatronics<sup>1</sup>.
                 I have worked on lighting design for various productions
-                including shows with Sierra College, Miss Sacramento County,
+                including shows with California Repertory Company, Sierra College, Miss Sacramento County,
                 Rocklin Community Theater, and more. I am actively doing
                 stagehand work with IATSE Local 50 and I am employed as a theater
                 technician at Sierra College and Roseville High School.
@@ -34,7 +34,7 @@ export default function About() {
               <p>
                 As of March 2026 I am currently attending CSU Long Beach
                 where I am continuing my studies in technical theater.
-                Prior to this, I attended Sierra College and received 
+                Prior to this, I attended Sierra College and received
                 an AA degree in theater and mechatronics.
               </p>
               <p>

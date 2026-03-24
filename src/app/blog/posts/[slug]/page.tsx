@@ -30,8 +30,8 @@ export default async function PostPage({params}: {params: Promise<{ slug: string
                     <div className="relative flex flex-col w-full h-full p-1 pb-10 md:p-10 gap-5 bg-white/2 rounded-lg">
                         <BlogPostThumbnail src={thumbnail} alt={`Thumbnail for ${title}`} title={title} />
                         <div className="flex flex-col gap-3 w-full px-5">
-                            <h1 className="text-left w-full font-title text-6xl uppercase">{title}</h1>
-                            <h2 className="text-left w-full font-title text-2xl uppercase">{date}</h2>
+                            <h1 className="text-left w-full font-title md:text-6xl text-3xl uppercase">{title}</h1>
+                            <h2 className="text-left w-full font-title md:text-2xl text-lg uppercase">{date}</h2>
                         </div>
                         <div className="flex flex-col gap-3 w-full px-5 border-t-4 border-black/20 pt-8 mt-2">
                             <div className="flex flex-col gap-5 w-full">

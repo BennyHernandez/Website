@@ -20,7 +20,7 @@ export default function BlogHome() {
           <div className="flex flex-row w-full gap-5">
             
             {featuredPosts.map((post) => (
-              <Link href={post.href} key={"featured-" + post.href} className="relative aspect-video w-1/2 rounded-md overflow-hidden cursor-pointer">
+              <Link href={post.href} key={"featured-" + post.href} className="relative aspect-video md:w-1/2 w-full rounded-md overflow-hidden cursor-pointer">
                 <Image
                   src={post.image}
                   alt={post.title}
@@ -29,8 +29,8 @@ export default function BlogHome() {
                 />
                 <LucideExternalLink size={30} className="absolute top-2 right-2 text-white opacity-50" />
                 <div className="absolute flex flex-col gap-3 w-full bottom-0 bg-gradient-to-t from-black/80 to-black/0 px-3 py-2">
-                  <p className="font-title text-3xl text-white">{post.title}</p>
-                  <p className="font-title text-xl text-white">{post.date}</p>
+                  <p className="font-title md:text-3xl text-xl text-white">{post.title}</p>
+                  <p className="font-title md:text-xl text-lg text-white">{post.date}</p>
                 </div>
               </Link>
             ))}
@@ -51,8 +51,8 @@ export default function BlogHome() {
                 />
                 <LucideExternalLink size={30} className="absolute top-2 right-2 text-white opacity-50" />
                 <div className="absolute flex flex-col gap-1 w-full bottom-0 bg-gradient-to-t from-black/80 to-black/0 px-3 py-2">
-                  <p className="font-title text-2xl text-white">{post.title}</p>
-                  <p className="font-title text-xl text-white">{post.date}</p>
+                  <p className="font-title md:text-2xl text-xl text-white">{post.title}</p>
+                  <p className="font-title md:text-xl text-lg text-white">{post.date}</p>
                 </div>
               </Link>
               ))}

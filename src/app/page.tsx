@@ -239,7 +239,7 @@ export default function Home() {
       }));
 
   useEffect(() => {
-    const importantTexts = ["Lighting Designer", "EOS Programmer"];
+    const importantTexts = ["Lighting Designer", "Lighting Programmer"];
 
     const texts = [
       "Electromechanical Designer & Technician",
@@ -306,7 +306,7 @@ export default function Home() {
             <div className="relative w-full h-full flex flex-col justify-center">
               <div className="relative flex flex-shrink flex-col gap-2 items-center self-center">
                 <div
-                  className={`z-10 absolute w-150 h-60 scale-x-150 scale-y-150 origin-center
+                  className={`z-10 absolute w-150 md:h-60 h-full scale-x-150 scale-y-150 origin-center
                     bg-radial-[at_50%_75%] ${heroColorA} to-70% rounded-full blur-xl
                     transition-opacity duration-1000 ease-in-out
                     ${isHeroFiltered ? (isAActive ? "opacity-15" : "opacity-0") : "opacity-0"}
@@ -314,7 +314,7 @@ export default function Home() {
                 />
 
                 <div
-                  className={`z-10 absolute w-150 h-60 scale-x-150 scale-y-150 origin-center
+                  className={`z-10 absolute w-150 md:h-60 h-full scale-x-150 scale-y-150 origin-center
                     bg-radial-[at_50%_75%] ${heroColorB} to-70% rounded-full blur-xl
                     transition-opacity duration-1000 ease-in-out
                     ${isHeroFiltered ? (isAActive ? "opacity-0" : "opacity-15") : "opacity-0"}
@@ -411,7 +411,7 @@ export default function Home() {
         >
           <h1 className="md:text-7xl text-4xl">Hi! I&apos;m Benny Hernandez</h1>
           <p className="md:text-3xl text-xl">
-            I am a lighting technician and designer based in Long Beach, California. <br />
+            I am a lighting technician and designer based in Los Angeles, California. <br />
             Come take a look at what I am working on!
           </p>
         </div>
@@ -466,7 +466,7 @@ export default function Home() {
                   <p className="font-sans text-base text-white mt-3">{item.description}</p>
 
                   {item.crew.length > 0 && (
-                    <div className="mt-4">
+                    <div className="mt-4">``
                       <p className="font-title text-lg text-white">Creative Team & Crew </p>
                       <ul className="mt-1 space-y-1">
                         {item.crew.map((member, index) => (
