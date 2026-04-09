@@ -24,7 +24,8 @@ portfolio:
       accessory to simulate the closing of the bucket, adding a distinctive
       visual effect and further immersing our audience in the world of the
       bucket. "
-    photo: []
+    photo:
+      - image: uploaded-img/carrie.jpg
   - title: Carrie The Musical
     type: Lighting Design
     role: Assistant Lighting Designer
