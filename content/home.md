@@ -1,5 +1,30 @@
 ---
 portfolio:
+  - title: Crabs In A Bucket
+    type: Lighting Design
+    role: Lighting Designer
+    date: 2026
+    location: "California Repertory Company "
+    crew:
+      - name: Carolina Montenegro
+        role: Director
+      - name: Turner Munch
+        role: Director
+      - name: Julia Juarez
+        role: Co-Lighting Designer
+      - name: Madison Kidd
+        role: Programmer
+    description: "Collaborated with my co-designer and the directors to create and
+      execute a creative lighting design concept that supported the storytelling
+      and reinforced the production's visual atmosphere. Designed for an
+      in-the-round configuration in The Player's Theatre at California State
+      University, Long Beach, the show utilized both LED and conventional
+      fixtures in tandem to illuminate our actors from all sides. For this
+      production, I also designed and built a custom DMX-controlled shutter
+      accessory to simulate the closing of the bucket, adding a distinctive
+      visual effect and further immersing our audience in the world of the
+      bucket. "
+    photo: []
   - title: Carrie The Musical
     type: Lighting Design
     role: Assistant Lighting Designer
