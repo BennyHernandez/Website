@@ -25,29 +25,16 @@ portfolio:
       visual effect and further immersing our audience in the world of the
       bucket. "
     photo:
-      - image: /uploaded-img/pootz-and-beb.jpg
-        caption: Pootz and Beb
+      - image: /uploaded-img/pootz-and-beb-3.jpg
       - image: /uploaded-img/mamon-chillin.jpg
         caption: Mamon
-      - image: /uploaded-img/mamon-pootz-and-amargo.jpg
-        caption: Mamon, Pootz, and Amargo
-      - image: /uploaded-img/pootz-and-beb-2.jpg
-      - image: /uploaded-img/pootz-and-beb-3.jpg
-      - image: /uploaded-img/rumble.jpg
-        caption: Rumble
       - image: /uploaded-img/mamon-special.jpg
       - image: /uploaded-img/climb-4.jpg
         caption: The Climb
-      - image: /uploaded-img/climb-3.jpg
-        caption: The Climb
       - image: /uploaded-img/mamon-and-beb-escape.jpg
-        caption: The Escape
-      - image: /uploaded-img/mamon-escape.jpg
         caption: The Escape
       - image: /uploaded-img/flashback.jpg
         caption: Flashback Scene
-      - image: /uploaded-img/fisherman-slump.jpg
-        caption: Fisherman
   - title: Carrie The Musical
     type: Lighting Design
     role: Assistant Lighting Designer
