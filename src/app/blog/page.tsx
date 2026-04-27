@@ -15,7 +15,7 @@ export default function BlogHome() {
       <Header />
       <main className="flex-1">
         <div className="flex flex-col m-10 items-center gap-5">
-          <h1 className="text-left w-full font-title text-6xl uppercase">Benny Hernandez's Blog</h1>
+          <h1 className="text-left w-full font-title text-6xl uppercase">Cool Stuff!</h1>
 
           <div className="flex flex-row w-full gap-5">
             

@@ -32,7 +32,7 @@ export default function Header() {
         <div className="hidden md:flex flex-row justify-end gap-10 w-full self-end font-title text-3xl uppercase">
           <Link href="/#portfolio" onClick={handlePortfolioClick}>Portfolio</Link>
           <Link href="/resume" onClick={handleNavClick}>Resume</Link>
-          <Link href="/blog" onClick={handleNavClick}>Blog</Link>
+          <Link href="/blog" onClick={handleNavClick}>Cool Stuff!</Link>
           <Link href="/about" onClick={handleNavClick}>About</Link>
         </div>
         <button
@@ -50,7 +50,7 @@ export default function Header() {
       >
         <Link href="/#portfolio" onClick={handlePortfolioClick}>Portfolio</Link>
         <Link href="/resume" onClick={handleNavClick}>Resume</Link>
-        <Link href="/blog" onClick={handleNavClick}>Blog</Link>
+        <Link href="/blog" onClick={handleNavClick}>Cool Stuff!</Link>
         <Link href="/about" onClick={handleNavClick}>About</Link>
       </div>
     </header>

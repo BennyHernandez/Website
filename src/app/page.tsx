@@ -210,6 +210,7 @@ export default function Home() {
 
         return {
           title: item?.title,
+          grow: item?.grow || false,
           type: item?.type,
           role: item?.role,
           date: item?.date,
@@ -223,6 +224,7 @@ export default function Home() {
       .filter((item) => item.title && item.src)
       .map((item) => ({
         title: item.title as string,
+        grow: item.grow || false,
         type: item.type || "",
         role: item.role || "",
         date: typeof item.date === "number" ? item.date : null,
@@ -409,11 +411,11 @@ export default function Home() {
             portfolioRef.current["portfolio"] = element;
           }}
         >
-          <h1 className="md:text-7xl text-4xl">Hi! I&apos;m Benny Hernandez</h1>
-          <p className="md:text-3xl text-xl">
+          <h1 className="md:text-7xl text-4xl">PORTFOLIO</h1>
+          {/* <p className="md:text-3xl text-xl">
             I am a lighting technician and designer based in Los Angeles, California. <br />
             Come take a look at what I am working on!
-          </p>
+          </p> */}
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 xl:grid-cols-3 gap-4 px-4 md:px-25">
@@ -423,7 +425,7 @@ export default function Home() {
               ref={(element) => {
                 gridItemRefs.current[item.src] = element;
               }}
-              className={`group relative overflow-hidden rounded-lg row-span-1 ${selectedItemSrc === item.src ? "col-span-full z-30" : ""}`}
+              className={`group relative overflow-hidden rounded-lg ${item.grow ? "md:col-span-2 md:row-span-2" : "md:col-span-1 md:row-span-1"} ${selectedItemSrc === item.src ? "col-span-full! z-30!" : ""}`}
               onClick={() =>
                 setSelectedItemSrc(item.src)
               }
@@ -436,7 +438,7 @@ export default function Home() {
                   setSelectedItemSrc(null);
                 }}
               >
-                <CircleX size={40} className="md:scale-100 scale-75"/>
+                <CircleX size={40} className="md:scale-100 scale-75" />
               </button>
               <div
                 className={`z-10 aspect-video w-full rounded-lg overflow-hidden cursor-pointer transform-gpu transition-[translate] duration-700 ease-in-out ${selectedItemSrc === item.src ? "absolute md:w-[calc((100%-2rem)/3)] md:shrink-0" : "relative"}`}
@@ -463,10 +465,10 @@ export default function Home() {
                     {item.location}
                     {item.date ? ` • ${item.date}` : ""}
                   </p>
-                  <p className="font-sans text-base text-white mt-3">{item.description}</p>
+                  {/* <p className="font-sans text-base text-white mt-3">{item.description}</p> */}
 
                   {item.crew.length > 0 && (
-                    <div className="mt-4">``
+                    <div className="mt-4">
                       <p className="font-title text-lg text-white">Creative Team & Crew </p>
                       <ul className="mt-1 space-y-1">
                         {item.crew.map((member, index) => (
@@ -500,9 +502,6 @@ export default function Home() {
         </div>
 
         <div className="flex flex-col gap-3 w-full font-title text-center justify-center md:px-50 px-4 py-10 md:py-16">
-          <p className="text-3xl">
-            Check out my <Link href="/resume" className="underline">resume</Link> or <Link href="/about" className="underline">about me</Link> for more details on my work and projects!
-          </p>
         </div>
 
       </main>

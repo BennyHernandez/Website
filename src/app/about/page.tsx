@@ -22,32 +22,25 @@ export default function About() {
             </div>
             <div className="flex flex-col gap-5 text-2xl basis-full">
               <p>
-                <b>Hi! Im Benny Hernandez.</b> I am a theater student from California
-                specializing in lighting design. I also have an interest in
-                stage automation, show networking, and mechatronics<sup>1</sup>.
-                I have worked on lighting design for various productions
-                including shows with California Repertory Company, Sierra College, Miss Sacramento County,
-                Rocklin Community Theater, and more. I am actively doing
-                stagehand work with IATSE Local 50 and I am employed as a theater
-                technician at Sierra College and Roseville High School.
+                Hi! I'm Benny Hernandez, a theater student from California specializing in lighting design.
+                I also have a strong interest in stage automation, show networking, and mechatronics<sup>1</sup>.
+                My lighting design experience includes productions with California Repertory Company, Sierra College,
+                Miss Sacramento County, Rocklin Community Theater, and more. I also work as a stagehand with
+                IATSE Local 50 and as a theater technician at Sierra College and Roseville High School.
               </p>
               <p>
-                As of March 2026 I am currently attending CSU Long Beach
-                where I am continuing my studies in technical theater.
-                Prior to this, I attended Sierra College and received
-                an AA degree in theater and mechatronics.
+                As of March 2026, I am attending CSU Long Beach, where I am continuing my studies in technical theater.
+                Before transferring, I attended Sierra College and earned AA degrees in theater and mechatronics.
               </p>
               <p>
-                Beyond the stage, I enjoy working on electronics and coding
-                projects as well as creating using CAD programs. I am very
-                passionate about merging theater with technology and a lot of my
-                side projects include exploring these possibilities.
+                Beyond the stage, I enjoy working on electronics, coding projects, and CAD-based design. I am passionate about merging
+                theater with technology, and many of my side projects explore the creative possibilities between the two.
               </p>
               <p>
                 For more, find me on{" "}
                 <a
                   href="https://www.instagram.com/bennyy.hernandez/"
-                  className="underline"
+                  className="underline text-amber-700"
                 >
                   Instagram @Bennyy.Hernandez
                 </a>
@@ -60,8 +53,14 @@ export default function About() {
           </div>
           <h1 className="text-center font-title text-6xl uppercase">Contact</h1>
           <div className="flex flex-col text-center text-2xl">
-            <p>Email is the best way to reach me. Informal messages are always welcome on my Instagram.</p>
-            <a href="mailto:benny@bennyh.io" className="underline">
+            <p>Email is the best way to reach me. Informal messages are always welcome on my&nbsp;
+              <a
+              href="https://www.instagram.com/bennyy.hernandez/"
+              className="underline text-amber-700">
+                Instagram
+              </a>.
+            </p>
+            <a href="mailto:benny@bennyh.io" className="underline text-amber-700">
               benny@bennyh.io
             </a>
           </div>

@@ -20,6 +20,7 @@ collections:
           widget: list
           fields:
             - { label: "Project", name: "title", widget: "string"}
+            - {label: "Grow", name: "grow", widget: "boolean", default: false}
             - { label: "Type", name: "type", widget: "select", options: ["Lighting Design", "Lighting Programmer", "Software", "Mechatronics", "Other Design"]}
             - { label: "Role", name: "role", widget: "string"}
             - { label: "Date", name: "date", widget: "number", min: 2000, max: 2100, step: 1}

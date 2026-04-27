@@ -26,7 +26,7 @@ export default async function PostPage({params}: {params: Promise<{ slug: string
             <Header />
             <main className="flex-1">
                 <div className="flex flex-col md:m-10 my-5 md:mx-[10vw] items-left gap-5">
-                    <h1 className="text-center md:text-left w-full font-title md:text-6xl text-4xl uppercase">Benny Hernandez's Blog</h1>
+                    <h1 className="text-center md:text-left w-full font-title md:text-6xl text-4xl uppercase">Cool Stuff!</h1>
                     <div className="relative flex flex-col w-full h-full p-1 pb-10 md:p-10 gap-5 bg-white/2 rounded-lg">
                         <BlogPostThumbnail src={thumbnail} alt={`Thumbnail for ${title}`} title={title} />
                         <div className="flex flex-col gap-3 w-full px-5">

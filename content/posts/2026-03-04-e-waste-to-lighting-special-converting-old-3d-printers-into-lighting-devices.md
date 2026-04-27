@@ -1,9 +1,11 @@
 ---
-title: "E-Waste to Lighting Special: Converting Old 3d Printers Into Lighting Devices"
+title: How I Built a Motorized Lighting Shutter from an Old 3D Printer
 date: 2026-03-03T20:44:00.000-08:00
 thumbnail: /uploaded-img/contraptionthumbnail.png
 hidden: false
 ---
+![](/uploaded-img/closing.gif)
+
 ## Introduction
 
 Recently, I decided to take on the task of creating a custom lighting special for the production I am currently working on: *Crabs in a Bucket* by Bernardo Cubría.
@@ -80,7 +82,7 @@ I also added a small prototype board with a DIP switch, allowing the DMX address
 
 ![In porgress picture of the assembly of the device](/uploaded-img/inprogress.png)
 
-## Programming the System
+## Programming
 
 All of the firmware was written using the Arduino IDE, and the full source code is available [here](https://github.com/BennyHernandez/DMX-Shutter).
 

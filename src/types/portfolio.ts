@@ -5,6 +5,7 @@ export type DecapCrewMember = {
 
 export type DecapGalleryItem = {
   title?: string;
+  grow?: boolean;
   type?: string;
   role?: string;
   date?: number;
@@ -26,6 +27,7 @@ export type GalleryCrewMember = {
 
 export type GalleryItem = {
   title: string;
+  grow: boolean;
   type: string;
   role: string;
   date: number | null;
