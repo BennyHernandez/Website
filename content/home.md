@@ -137,6 +137,18 @@ portfolio:
     description: Created lighting looks based on music, used busking techniques,
       created EOS effects, and managed spot operators. Credits include Holiday
       Show '24, Big Band '24, American Pops '24, and Big Band '23.
+  - grow: false
+    title: The Miser
+    type: Lighting Design
+    role: Lighting Designer
+    date: 2026
+    location: "California Repertory Company "
+    crew:
+      - name: Madison Kidd
+        role: Co-Lighting Designer
+      - name: Keiana Richàrd-Bartolome
+        role: Director
+    description: ""
   - crew: []
     date: 2024
     photo:
