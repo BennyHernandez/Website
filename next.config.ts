@@ -3,15 +3,6 @@ import type { NextConfig } from "next";
 const nextConfig: NextConfig = {
   pageExtensions: ["js", "jsx", "ts", "tsx"],
   output: process.env.NODE_ENV !== "production" ? "standalone" : "export",
-  images: {
-    formats: ['image/avif', 'image/webp'],
-    remotePatterns: [
-      {
-        protocol: "https",
-        hostname: "picsum.photos",
-      },
-    ],
-  },
   turbopack: {
     rules: {
       "*.md": {
