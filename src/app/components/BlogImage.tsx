@@ -29,10 +29,13 @@ export default function BlogImage({ src, alt, title }: { src: string; alt?: stri
         <>
             <span className="inline-block max-h-80 relative overflow-hidden rounded-md cursor-zoom-in">
                 <span onClick={() => setExpandImage(true)} className="inline-block max-h-80 relative overflow-hidden rounded-md cursor-zoom-in">
-                    <img
+                    <Image
                         src={src || ""}
                         alt={alt || ""}
-                        className="max-h-80 w-auto object-contain"
+                        width={1200}
+                        height={800}
+                        sizes="(max-width: 768px) 100vw, 1200px"
+                        className="max-h-80 w-auto h-auto object-contain"
                     />
                 </span>
                 {title &&
